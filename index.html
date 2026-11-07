@@ -1,12 +1,232 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Foodtruck Animark</title>
-<meta http-equiv="refresh" content="0; url=flyer.pdf">
+<title>El Carrito Animark · Grand Prix Lago Ranco 2026</title>
+<meta name="description" content="Comida casera, fresca y balanceada para rendir y recuperar. Promos de desayuno y almuerzo. Pedidos por WhatsApp.">
+<meta name="theme-color" content="#14301c">
+<meta property="og:title" content="El Carrito Animark">
+<meta property="og:description" content="Comida casera, fresca y balanceada para rendir y recuperar.">
+<meta property="og:image" content="https://foodtruckanimark.github.io/assets/ciclistas.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/ciclistas.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#14301c; --verde-2:#3d7a3f; --verde-3:#2b5a30; --lima:#d4ec4a; --crema:#f7f3e8; --linea:#e3dccb;
+  --gut:clamp(16px,5.2vw,56px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0f2416;font-family:Barlow,system-ui,sans-serif;font-weight:500;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.cond{font-family:'Barlow Condensed',system-ui,sans-serif;text-transform:uppercase}
+.anton{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:1;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto}
+.kicker{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:clamp(14px,2.5vw,26px);color:var(--verde-2)}
+
+/* ---------- Portada ---------- */
+.hero{background:var(--verde);color:var(--crema);overflow:hidden;position:relative}
+.hero-img{position:relative;height:clamp(440px,115vw,1240px)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,48,28,.55) 0%,rgba(20,48,28,0) 26%,rgba(20,48,28,0) 55%,var(--verde) 100%)}
+.hero-top{position:absolute;z-index:2;top:var(--gut);left:var(--gut);right:var(--gut);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.logo{width:clamp(96px,21vw,230px);aspect-ratio:1;border-radius:50%;background:#fff;overflow:hidden;border:clamp(3px,.6vw,6px) solid var(--lima);box-shadow:0 10px 30px rgba(0,0,0,.3);flex:none}
+.logo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.badges{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.badge{font-family:'Barlow Condensed',system-ui,sans-serif;text-transform:uppercase;font-weight:800;letter-spacing:.06em;font-size:clamp(16px,3.2vw,34px);padding:.3em .65em;background:var(--lima);color:var(--verde)}
+.badge.dark{background:var(--verde);color:var(--crema);font-weight:700;letter-spacing:.08em;font-size:clamp(14px,2.6vw,28px)}
+.hero-body{position:relative;z-index:2;margin-top:clamp(-360px,-33vw,-130px);padding:0 var(--gut) var(--gut);display:flex;flex-direction:column;gap:clamp(20px,3.4vw,36px)}
+.evento{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:clamp(15px,3.3vw,36px);color:var(--lima);margin:0 0 .4em}
+h1{margin:0;font-size:clamp(52px,15.5vw,168px);line-height:.9;letter-spacing:-.005em}
+.lead{margin:0;font-size:clamp(18px,3.5vw,38px);line-height:1.3;max-width:900px;text-wrap:pretty}
+.promos{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.9vw,20px)}
+.promo{padding:clamp(16px,2.8vw,30px);display:flex;flex-direction:column;gap:4px;color:var(--verde);background:var(--crema)}
+.promo.lima{background:var(--lima)}
+.promo.lima .kicker{color:var(--verde-3)}
+.promo .t{font-size:clamp(26px,5.2vw,56px)}
+.promo .p{font-size:clamp(34px,6.7vw,72px);line-height:1.05}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-top:2px solid rgba(247,243,232,.25);padding-top:clamp(18px,2.6vw,28px)}
+.wa-label{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(14px,2.6vw,28px);color:var(--lima)}
+.wa-num{font-size:clamp(30px,4.8vw,52px);text-decoration:none;display:inline-block}
+.wa-num:hover{color:var(--lima)}
+.ver-menu{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(17px,3vw,32px);text-align:right;line-height:1.15;text-decoration:none}
+.ver-menu span{color:var(--lima)}
+
+/* ---------- Menú ---------- */
+.menu{background:var(--crema);color:var(--verde);margin-top:clamp(0px,2.2vw,24px)}
+.menu-head{background:var(--verde);color:var(--crema);padding:clamp(24px,4.4vw,48px) var(--gut);display:flex;align-items:center;gap:clamp(16px,3vw,32px)}
+.menu-head .logo{width:clamp(72px,14vw,150px);box-shadow:none}
+.menu-head .evento{font-size:clamp(13px,2.8vw,30px);letter-spacing:.12em;margin:0 0 .2em}
+h2{margin:0;font-size:clamp(36px,9.6vw,104px);line-height:.95}
+.menu-body{padding:clamp(24px,3.7vw,40px) var(--gut) 0;display:flex;flex-direction:column;gap:clamp(20px,2.6vw,28px)}
+.card{border:3px solid var(--verde);background:#fff}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:clamp(14px,1.9vw,20px) clamp(16px,2.6vw,28px);border-bottom:3px solid var(--verde)}
+h3{margin:0;font-size:clamp(32px,5.6vw,60px)}
+.price{background:var(--lima);font-size:clamp(32px,6.3vw,68px);padding:.18em .32em;flex:none}
+.opciones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.opcion{border-right:2px solid var(--linea);border-bottom:2px solid var(--linea)}
+.opcion:nth-child(2n){border-right:0}
+.opcion img{width:100%;height:clamp(110px,15.7vw,170px);object-fit:cover}
+.opcion p,.barra p{margin:0;padding:12px 14px 16px;font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:600;font-size:clamp(17px,2.5vw,27px);line-height:1.1}
+.incluye{background:var(--verde);color:var(--crema);padding:14px clamp(16px,2.6vw,28px);font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:clamp(18px,2.8vw,30px)}
+.incluye span{color:var(--lima)}
+.almuerzo{display:grid;grid-template-columns:1fr}
+.almuerzo>img{width:100%;height:clamp(200px,50vw,330px);object-fit:cover;border-bottom:3px solid var(--verde)}
+.almuerzo-body{padding:clamp(16px,2vw,22px) clamp(16px,2.6vw,28px);display:flex;flex-direction:column;gap:14px}
+.almuerzo-body .row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.almuerzo-body .price{font-size:clamp(30px,5.6vw,60px)}
+.almuerzo-body .desc{margin:0;font-size:clamp(17px,2.6vw,28px);line-height:1.25}
+.lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:600;font-size:clamp(20px,3vw,32px)}
+.lista li{display:flex;align-items:center;gap:12px}
+.lista li::before{content:"";width:.44em;height:.44em;background:var(--verde-2);flex:none}
+.barras-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.proteina{font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(18px,2.8vw,30px);line-height:1.05;text-align:right}
+.proteina span{color:var(--verde-2)}
+.barras{display:grid;grid-template-columns:1fr;gap:12px}
+.barra{background:#fff;border:3px solid var(--verde);display:grid;grid-template-columns:110px 1fr;align-items:center}
+.barra img{width:100%;height:100%;min-height:90px;object-fit:cover}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:'Barlow Condensed',system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(15px,2.2vw,24px)}
+.tags span{border:2px solid var(--verde);padding:6px 14px}
+.cta{background:var(--lima);color:var(--verde);padding:clamp(22px,2.8vw,30px) var(--gut);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:clamp(24px,2.6vw,28px)}
+.cta .wa-label{color:var(--verde);font-weight:700;letter-spacing:.1em}
+.cta .wa-num{font-size:clamp(32px,5.9vw,64px)}
+.cta .wa-num:hover{color:var(--verde-3)}
+.lema{font-size:clamp(26px,3.7vw,40px);text-align:right}
+
+@media (min-width:640px){
+  .opciones{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .opcion{border-bottom:0}
+  .opcion:nth-child(2n){border-right:2px solid var(--linea)}
+  .opcion:last-child{border-right:0}
+  .almuerzo{grid-template-columns:minmax(0,39%) minmax(0,1fr)}
+  .almuerzo>img{height:100%;min-height:330px;border-bottom:0;border-right:3px solid var(--verde)}
+  .barras{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .barra{display:flex;flex-direction:column;align-items:stretch}
+  .barra img{height:clamp(120px,14vw,150px);min-height:0}
+}
+</style>
 </head>
 <body>
-<p><a href="flyer.pdf">Ver flyer</a></p>
+<div class="wrap">
+
+<section class="hero">
+  <div class="hero-img">
+    <img src="assets/ciclistas.webp" width="960" height="1280" alt="Ciclistas en El Carrito Animark" fetchpriority="high">
+  </div>
+  <div class="hero-top">
+    <div class="logo"><img src="assets/logo.webp" width="480" height="519" alt="Logo El Carrito Animark"></div>
+    <div class="badges">
+      <div class="badge">7 Nov · 2026</div>
+      <div class="badge dark">Largada 09:00 h</div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div>
+      <p class="evento">Grand Prix Lago Ranco 2026</p>
+      <h1 class="anton">Combustible<br>para 114 km</h1>
+    </div>
+    <p class="lead">Antes de la largada o al cruzar la meta: comida casera, fresca y balanceada para rendir y recuperar.</p>
+    <div class="promos">
+      <div class="promo">
+        <div class="kicker">Promo ciclista</div>
+        <div class="anton t">Desayuno</div>
+        <div class="anton p">$6.900</div>
+      </div>
+      <div class="promo lima">
+        <div class="kicker">Promo ciclista</div>
+        <div class="anton t">Almuerzo</div>
+        <div class="anton p">$9.900</div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div>
+        <div class="wa-label">Pedidos WhatsApp</div>
+        <a class="anton wa-num" href="https://wa.me/56945350838">+569 4535 0838</a>
+      </div>
+      <a class="ver-menu" href="#menu">Menú completo<br><span>Ver abajo ↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <div class="logo"><img src="assets/logo.webp" width="480" height="519" alt="" loading="lazy"></div>
+    <div>
+      <p class="evento">El Carrito Animark · Lago Ranco</p>
+      <h2 class="anton">Promos ciclistas</h2>
+    </div>
+  </div>
+
+  <div class="menu-body">
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <div class="kicker">Pre-largada · elige tu opción</div>
+          <h3 class="anton">Desayuno</h3>
+        </div>
+        <div class="anton price">$6.900</div>
+      </div>
+      <div class="opciones">
+        <div class="opcion"><img src="assets/sand-jamon.webp" width="450" height="280" alt="Sándwich de jamón de pavo" loading="lazy"><p>Sándwich jamón de pavo + queso fresco</p></div>
+        <div class="opcion"><img src="assets/sand-huevo.webp" width="450" height="280" alt="Sándwich de huevo y palta" loading="lazy"><p>Sándwich huevo + palta</p></div>
+        <div class="opcion"><img src="assets/yogur.webp" width="352" height="304" alt="Yogur con avena" loading="lazy"><p>Yogur con avena</p></div>
+        <div class="opcion"><img src="assets/fruta.webp" width="360" height="300" alt="Vaso de fruta picada" loading="lazy"><p>Vaso de fruta fresca picada</p></div>
+      </div>
+      <div class="incluye">+ 1 barrita saludable <span>incluida</span></div>
+    </article>
+
+    <article class="card almuerzo">
+      <img src="assets/bowl.webp" width="800" height="520" alt="Pollo a la plancha con arroz y ensalada" loading="lazy">
+      <div class="almuerzo-body">
+        <div class="row">
+          <div>
+            <div class="kicker">Post-meta</div>
+            <h3 class="anton">Almuerzo</h3>
+          </div>
+          <div class="anton price">$9.900</div>
+        </div>
+        <p class="desc">Completo, fresco y balanceado para recuperar.</p>
+        <ul class="lista">
+          <li>Pollo a la plancha</li>
+          <li>Arroz</li>
+          <li>Variedad de ensaladas mixtas</li>
+        </ul>
+      </div>
+    </article>
+
+    <div>
+      <div class="barras-head">
+        <div>
+          <div class="kicker">¡Nuevo! · Para llevar en el bolsillo</div>
+          <h3 class="anton">Barritas saludables</h3>
+        </div>
+        <div class="proteina">12 g proteína<br><span>por barrita</span></div>
+      </div>
+      <div class="barras">
+        <div class="barra"><img src="assets/barra-cacao.webp" width="640" height="644" alt="Barrita quinoa, maní y cacao" loading="lazy"><p>Quinoa, maní y cacao</p></div>
+        <div class="barra"><img src="assets/barra-coco.webp" width="600" height="644" alt="Barrita coco, maní y chips de chocolate" loading="lazy"><p>Coco, maní y chips de chocolate</p></div>
+        <div class="barra"><img src="assets/barra-arandano.webp" width="640" height="644" alt="Barrita arándanos, coco y almendras" loading="lazy"><p>Arándanos rojos, coco y almendras</p></div>
+      </div>
+      <div class="tags">
+        <span>Sin gluten</span><span>Sin azúcar añadida</span><span>Vegano</span><span>Ingredientes reales</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <div class="wa-label">Reservas y pedidos · WhatsApp</div>
+      <a class="anton wa-num" href="https://wa.me/56945350838">+569 4535 0838</a>
+    </div>
+    <div class="anton lema">Supera tus<br>límites</div>
+  </div>
+</section>
+
+</div>
 </body>
 </html>
